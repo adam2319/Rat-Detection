@@ -1,0 +1,8 @@
+path: /home/ubuntu/Desktop/RAT/part3
+train: images/train #trin images
+val: images #val images
+
+#classes
+names:
+    0: rat
+    1: platform
