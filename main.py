@@ -42,7 +42,7 @@ class VideoAnalysis(QWidget):
             ret, frame = video.read()
             height, width, color_dept = frame.shape
 
-            output_path = "./rat-detection/result/result.mp4"
+            output_path = "./rat-detection/result.mp4"
             video_result = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), int(video.get(cv2.CAP_PROP_FPS)), (width, height))
 
             model_path = "./rat-detection/runs/detect/train/weights/last.pt"
