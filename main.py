@@ -42,15 +42,15 @@ class VideoAnalysis(QWidget):
             ret, frame = video.read()
             height, width, color_dept = frame.shape
 
-            output_path = "/home/ubuntu/Documents/Morris/result.mp4"
+            output_path = "./rat-detection/result/result.mp4"
             video_result = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'mp4v'), int(video.get(cv2.CAP_PROP_FPS)), (width, height))
 
-            model_path = "/home/ubuntu/PycharmProjects/pythonProject1/runs/detect/train29/weights/last.pt"
+            model_path = "./rat-detection/runs/detect/train/weights/last.pt"
             model = YOLO(model_path)
             threshold = 0.5
 
             platform_location = True
-            image_path = r'/home/ubuntu/Documents/Morris/frame_image1.jpg'
+            image_path = r'./rat-detection/frame.jpg'
             image_result = cv2.imread(image_path)
 
             rats_path = []
