@@ -13,6 +13,7 @@ Alzheimer's disease is a progressive neurodegenerative condition of the brain, g
 ![statistics](readme/alz.jpg)
 
 New registered patients annually.
+
 _https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.12068_
 
 
